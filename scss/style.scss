@@ -1,9 +1,29 @@
+// Helpers
+%hidden {
+  display: none;
+}
 
+img {
+  max-width: 100%;
+}
 
-/* Icons */ 
-// .icon-phone:before {
-//   content: "\e942";
-// }
-// .icon-menu:before {
-//   content: "\e9bd";
-// }
+// Layout
+.logo-list {
+  white-space: nowrap;
+  overflow: hidden;
+  height: 70px;
+  width: 100%;
+  img {
+    max-height: 100%;
+    filter: grayscale(1);
+    &:hover {
+      filter: initial;
+    }
+  }
+}
+
+.clients {
+  div {
+    @extend %hidden; 
+  }
+}

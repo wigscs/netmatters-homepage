@@ -1,3 +1,23 @@
-/* Icons */
+.clients div {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo-list {
+  white-space: nowrap;
+  overflow: hidden;
+  height: 70px;
+  width: 100%;
+}
+.logo-list img {
+  max-height: 100%;
+  filter: grayscale(1);
+}
+.logo-list img:hover {
+  filter: initial;
+}
 
 /*# sourceMappingURL=style.css.map */
