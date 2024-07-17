@@ -7,16 +7,25 @@
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/6ff5ce8b5b/UntitledProject/style.css">
-  
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header>
-    <img class="logo" src="img/f-logo.webp" alt="Netmatters&trade;">
-    <a href="tel:+#"><span class="icon">call-us</span></a>
-    <a href="#sidebar-menu"><span class="icon icon-menu"></span></a>
+    
+    <a href="#">
+      <img class="logo" src="img/f-logo.webp" alt="Netmatters&trade;">
+    </a>
+    
+    <a class="hidden" href="#">Support</a>
+    <a class="hidden" href="#">Contact</a>
+
+    <a href="tel:+#">
+      <span class="icon icon-phone"></span>
+    </a>
+    <button class="btn btn-hamburger" type="button">
+      <span class="icon icon-menu"></span>
+    </button>
 
     <search>
       <form method="get" action="index.html">
@@ -29,7 +38,7 @@
   <section class="hero">
     <h1>The East Of England's Leading Technology Company</h1>
     <p>Performance-driven digital and technology services with complete transparency.</p>
-    <a href="#">Why Choose Us?</a>
+    <a class="btn btn-web" href="#">Why Choose Us?</a>
   </section>
 
   <section>
@@ -296,7 +305,7 @@
     </span>
   </aside>
 
-  <footer>
+  <footer id="footer-nav" class="container">
     <img src="img/nm-logo-white-med.webp" alt="Netmatters&trade;">
 
     <h4>Follow us on:</h4>
@@ -350,8 +359,13 @@
       <li><a href="#">Wymondham Office</a></li>
       <li><a href="#">Great Yarmouth Office</a></li>
     </ul>
-    <p>&copy; Copyright Netmatters 2024. All rights reserved.</p>
-    <a href="#">Sitemap</a>
+  </footer>
+  <footer class="container" id="footer-bottom">
+    <p>
+      &copy; Copyright Netmatters 2024.<br>
+      All rights reserved.<br>
+      <a href="#">Sitemap</a>
+    </p>
   </footer>
 </body>
 </html>
