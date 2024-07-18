@@ -1,0 +1,12 @@
+// Header
+
+.btn-hamburger {
+  background-color: #333645;
+  height: 56px;
+  width: 63px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: darken(#333645, 10%);
+  }
+}

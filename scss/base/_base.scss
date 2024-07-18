@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Poppins-Regular.woff2) format("woff2");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins,sans-serif;
+  font-size: 1rem;
+  letter-spacing: .4px;
+  color: #666
+}
+
+figure, blockquote {
+  margin: 0;
+}
+
+blockquote {
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+figcaption {
+  font-weight: 600;
+  color: #a3a8ac;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  a {
+    color: #fff;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+a {
+  color: #333645;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin: 0 0 28px;
+  color: #333645
+}
+
+h2 {
+  font-size: 2rem
+}
+
+h2,h3,h4 {
+  font-weight: 400;
+  margin: 0 0 15px;
+  color: #333645
+}
+
+h3 {
+  font-size: 1.625rem
+}
+
+h4 {
+  font-size: 1.25rem
+}
+
+p, blockquote {
+  line-height: 1.875rem;
+  margin-bottom: 25px
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}

@@ -1,0 +1,63 @@
+// Services
+.services {
+  color: #333645;
+  h1 {
+    font-size: 2.7rem;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+  
+  h3 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 50px;
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    font-size: .8125rem;
+    line-height: 1.375rem;
+    margin-bottom: 13px;
+    font-weight: 400;
+  }
+  
+  .card a {
+    display: block;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
+    margin: 40px 0;
+    position: relative;
+    top: 0;
+    transition: .5s ease;
+    
+    .icon {
+      display: inline-block;
+      color: #fff;
+      background-color: #333645;
+      padding: 20px;
+      border-radius: 50%;
+      font-size: 1.57rem;
+      margin: 0 auto 17px;
+    }
+    &:hover {
+      color: #fff;
+      border-color: transparent;
+      top: -10px;
+      transition: .5s ease;
+      background-color: #ccc;
+      h2 {
+        color: inherit;
+      }
+    }
+  }
+}
