@@ -28,11 +28,14 @@
     }
   }
 
-  .icon-star-full {
-    color: orange;
-    font-size: 50px;
-    margin-bottom: 25px;
-    display: inline-block;
+  @media (max-width: 603px) {
+    .btn-google {
+      margin-bottom: 20px;
+    }
   }
-
+  @media (max-width: 538px) {
+    .btn-primary:first-of-type {
+      margin-bottom: 20px;
+    }
+  }
 }

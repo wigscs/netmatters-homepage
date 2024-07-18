@@ -395,6 +395,10 @@ p, blockquote {
   padding-right: 15px;
 }
 
+header img {
+  max-width: 100%;
+}
+
 .btn-hamburger {
   background-color: #333645;
   height: 56px;
@@ -541,17 +545,28 @@ p, blockquote {
   font-weight: 600;
   letter-spacing: 1px;
 }
-#home-main .icon-star-full {
-  color: orange;
-  font-size: 50px;
-  margin-bottom: 25px;
-  display: inline-block;
+@media (max-width: 603px) {
+  #home-main .btn-google {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 538px) {
+  #home-main .btn-primary:first-of-type {
+    margin-bottom: 20px;
+  }
+}
+
+.articles img {
+  max-width: 100%;
 }
 
 #footer-nav {
   color: #fff;
   background-color: #323544;
   padding-top: 27px;
+}
+#footer-nav img {
+  max-width: 100%;
 }
 #footer-nav h4 {
   text-transform: uppercase;
@@ -626,6 +641,10 @@ p, blockquote {
 }
 .btn-primary:hover {
   background-color: #121318;
+}
+
+.btn-google, .btn-trustpilot {
+  margin-bottom: 0;
 }
 
 @font-face {
@@ -2626,6 +2645,13 @@ p, blockquote {
 .icon-arrow-right2 {
   position: relative;
   top: 2px;
+}
+
+.icon-star-full {
+  color: orange;
+  font-size: 50px;
+  margin-bottom: 25px;
+  display: inline-block;
 }
 
 .hidden, .clients div {
