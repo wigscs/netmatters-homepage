@@ -86,3 +86,12 @@ p, blockquote {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+#container {
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  transition: all .5s;
+  left: 0;
+}

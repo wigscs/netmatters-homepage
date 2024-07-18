@@ -8,9 +8,16 @@
     max-width: 100%;
   }
 
+  h1, h2, h3, h4 {
+    color: #fff;
+  }
+
   h4 {
+    font-size: 1rem;
     text-transform: uppercase;
     font-weight: 400;
+    margin-top: 24px;
+    margin-bottom: 26px;
   }
 
   ul {
@@ -31,6 +38,46 @@
 
   a {
     color: #fff;
+  }
+}
+
+.social-logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+  .btn-primary {
+    padding: 14px 22px;
+    margin: 0 10px 10px 0;
+    border-radius: 0;
+  }
+
+  a {
+    text-align: center;
+    background-color: #212330;
+  }
+  
+  .facebook:hover {
+    background-color: $facebook;
+  }
+  
+  .linkedin:hover {
+    background-color: $linkedin;
+  }
+  
+  .twitter:hover {
+    background-color: $twitter;
+  }
+  
+  .instagram:hover {
+    background-color: $instagram;
+  }
+
+  @media (max-width: 480px) {
+    a {
+      width: 35%;
+    }
   }
 }
 

@@ -395,6 +395,15 @@ p, blockquote {
   padding-right: 15px;
 }
 
+#container {
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  transition: all 0.5s;
+  left: 0;
+}
+
 header img {
   max-width: 100%;
 }
@@ -568,9 +577,15 @@ header img {
 #footer-nav img {
   max-width: 100%;
 }
+#footer-nav h1, #footer-nav h2, #footer-nav h3, #footer-nav h4 {
+  color: #fff;
+}
 #footer-nav h4 {
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: 400;
+  margin-top: 24px;
+  margin-bottom: 26px;
 }
 #footer-nav ul {
   list-style: none;
@@ -587,6 +602,39 @@ header img {
 }
 #footer-nav a {
   color: #fff;
+}
+
+.social-logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.social-logos .btn-primary {
+  padding: 14px 22px;
+  margin: 0 10px 10px 0;
+  border-radius: 0;
+}
+.social-logos a {
+  text-align: center;
+  background-color: #212330;
+}
+.social-logos .facebook:hover {
+  background-color: #3b5998;
+}
+.social-logos .linkedin:hover {
+  background-color: #0077b5;
+}
+.social-logos .twitter:hover {
+  background-color: #00aced;
+}
+.social-logos .instagram:hover {
+  background-color: #d93175;
+}
+@media (max-width: 480px) {
+  .social-logos a {
+    width: 35%;
+  }
 }
 
 #footer-bottom {
