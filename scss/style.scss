@@ -14,16 +14,46 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
-}
-
 body {
   font-family: Poppins,sans-serif;
   font-size: 1rem;
   letter-spacing: .4px;
-  line-height: 1.42857143;
   color: #666
+}
+
+a {
+  color: #333645;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin: 0 0 28px;
+  color: #333645
+}
+
+h2 {
+  font-size: 2rem
+}
+
+h2,h3,h4 {
+  font-weight: 400;
+  margin: 0 0 15px;
+  color: #333645
+}
+
+h3 {
+  font-size: 1.625rem
+}
+
+h4 {
+  font-size: 1.25rem
+}
+
+p {
+  line-height: 1.875rem;
+  margin-bottom: 25px
 }
 
 .container {
@@ -31,6 +61,70 @@ body {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+// Banner
+#banner {
+  height: 550px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+
+  .img {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    opacity: 0.5;
+  }
+
+  img {
+    height: 100%;
+  }
+
+  .content {
+    padding: 3.75rem;
+    z-index: 2;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 0 0 1.25rem;
+    font-weight: 600;
+  }
+
+  p {
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+
+}
+
+// Services
+.services {
+  color: #333645;
+  text-align: center;
+  h1 {
+    font-size: 2.7rem;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-weight: 600;
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  
+
 }
 
 #footer-nav {
@@ -87,15 +181,7 @@ body {
 
 
 
-// Base
-a {
-  color: #333645;
-  text-decoration: none;
-}
 
-img {
-  max-width: 100%;
-}
 
 // Buttons
 .btn {
@@ -106,11 +192,26 @@ img {
   line-height: 35px;
   padding: 5px 15px;
   border-radius: 3px;
+  background-color: #666;
+  color: #fff;
+
+  &-lg {
+    line-height: 50px;
+    padding: 15px 20px;
+    font-size: 1.25rem;
+  }
+
+  &:active {
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  }
 }
 
 .btn-web {
   color: #fff;
   background-color: #926fb1;
+  &:hover {
+    background-color: darken(#926fb1, 10%);
+  }
 }
 
 .btn-hamburger {
@@ -120,10 +221,15 @@ img {
   border: none;
   cursor: pointer;
   &:hover {
-    background-color: #22242e;
+    background-color: darken(#333645, 10%);
   }
 }
 
+// Icons
+.icon-arrow-right2 {
+  position: relative;
+  top: 2px;
+}
 
 // Layout
 .logo-list {
