@@ -1,6 +1,6 @@
 // Services
 .services {
-  color: #333645;
+  color: $brand-light;
   h1 {
     font-size: 2.7rem;
     margin-bottom: 15px;
@@ -42,22 +42,78 @@
     
     .icon {
       display: inline-block;
-      color: #fff;
-      background-color: #333645;
+      color: $white;
       padding: 20px;
       border-radius: 50%;
       font-size: 1.57rem;
       margin: 0 auto 17px;
     }
     &:hover {
-      color: #fff;
+      color: $white;
       border-color: transparent;
       top: -10px;
       transition: .5s ease;
-      background-color: #ccc;
       h2 {
         color: inherit;
       }
     }
   }
+
+  .software {
+    .btn {
+      background-color: $software;
+    }
+    a:hover, .icon {
+      background-color: $software-bg;
+    }
+    a:hover {
+      .btn {
+        background-color: $white;
+        color: $software-bg;
+      }
+      .icon {
+        color: $software-bg;
+        background-color: $white;
+      }
+    }
+  }
+  
+  // Hover state color inversion for cards
+  @mixin card-hover($color) {
+    .btn, .icon {
+      background-color: $color;
+    }
+    a:hover {
+      background-color: $color;
+      .btn, .icon {
+        color: $color;
+        background-color: $white;
+      }
+    }
+  }
+
+  .it {
+    @include card-hover($it);
+  }
+
+  .digital {
+    @include card-hover($digital);
+  }
+
+  .telecoms {
+    @include card-hover($telecoms);
+  }
+
+  .web {
+    @include card-hover($web);
+  }
+
+  .security {
+    @include card-hover($security);
+  }
+
+  .developer {
+    @include card-hover($developer);
+  }
+
 }

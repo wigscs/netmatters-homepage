@@ -5,12 +5,12 @@ header {
   }
 }
 .btn-hamburger {
-  background-color: #333645;
+  background-color: $brand-light;
   height: 56px;
   width: 63px;
   border: none;
   cursor: pointer;
   &:hover {
-    background-color: darken(#333645, 10%);
+    background-color: $brand-dark;
   }
 }

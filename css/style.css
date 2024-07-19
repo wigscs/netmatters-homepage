@@ -307,12 +307,24 @@ template {
   display: none;
 }
 
+/*
+main-background:              #333645 *
+hamburger:                    #333645 *
+a:                            #333645 *
+a:hover:                      #121419 *
+
+btn-primary-background:       #272936 *
+btn-primary-background:hover: #121318 *
+
+footer-background:            #323544 *
+social-logo-background:       #212330 *
+*/
 @font-face {
   font-family: Poppins;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../fonts/Poppins-Regular.woff2) format("woff2");
+  src: url(../fonts/Poppins-Regular.ttf) format("woff2");
 }
 *,
 *::before,
@@ -353,8 +365,11 @@ figcaption a:hover {
   text-decoration: underline;
 }
 
-a {
+a, h1, h2, h3, h4 {
   color: #333645;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -362,7 +377,6 @@ h1 {
   font-size: 2.25rem;
   font-weight: 400;
   margin: 0 0 28px;
-  color: #333645;
 }
 
 h2 {
@@ -372,7 +386,6 @@ h2 {
 h2, h3, h4 {
   font-weight: 400;
   margin: 0 0 15px;
-  color: #333645;
 }
 
 h3 {
@@ -416,7 +429,7 @@ header img {
   cursor: pointer;
 }
 .btn-hamburger:hover {
-  background-color: #1d1f28;
+  background-color: #121419;
 }
 
 #banner {
@@ -498,7 +511,6 @@ header img {
 .services .card a .icon {
   display: inline-block;
   color: #fff;
-  background-color: #333645;
   padding: 20px;
   border-radius: 50%;
   font-size: 1.57rem;
@@ -509,10 +521,83 @@ header img {
   border-color: transparent;
   top: -10px;
   transition: 0.5s ease;
-  background-color: #ccc;
 }
 .services .card a:hover h2 {
   color: inherit;
+}
+.services .software .btn {
+  background-color: #f7b322;
+}
+.services .software a:hover, .services .software .icon {
+  background-color: #67809F;
+}
+.services .software a:hover .btn {
+  background-color: #fff;
+  color: #67809F;
+}
+.services .software a:hover .icon {
+  color: #67809F;
+  background-color: #fff;
+}
+.services .it .btn, .services .it .icon {
+  background-color: #4183d7;
+}
+.services .it a:hover {
+  background-color: #4183d7;
+}
+.services .it a:hover .btn, .services .it a:hover .icon {
+  color: #4183d7;
+  background-color: #fff;
+}
+.services .digital .btn, .services .digital .icon {
+  background-color: #2ecc71;
+}
+.services .digital a:hover {
+  background-color: #2ecc71;
+}
+.services .digital a:hover .btn, .services .digital a:hover .icon {
+  color: #2ecc71;
+  background-color: #fff;
+}
+.services .telecoms .btn, .services .telecoms .icon {
+  background-color: #d64541;
+}
+.services .telecoms a:hover {
+  background-color: #d64541;
+}
+.services .telecoms a:hover .btn, .services .telecoms a:hover .icon {
+  color: #d64541;
+  background-color: #fff;
+}
+.services .web .btn, .services .web .icon {
+  background-color: #926fb1;
+}
+.services .web a:hover {
+  background-color: #926fb1;
+}
+.services .web a:hover .btn, .services .web a:hover .icon {
+  color: #926fb1;
+  background-color: #fff;
+}
+.services .security .btn, .services .security .icon {
+  background-color: #f62459;
+}
+.services .security a:hover {
+  background-color: #f62459;
+}
+.services .security a:hover .btn, .services .security a:hover .icon {
+  color: #f62459;
+  background-color: #fff;
+}
+.services .developer .btn, .services .developer .icon {
+  background-color: #ce4125;
+}
+.services .developer a:hover {
+  background-color: #ce4125;
+}
+.services .developer a:hover .btn, .services .developer a:hover .icon {
+  color: #ce4125;
+  background-color: #fff;
 }
 
 .logo-list {
@@ -565,8 +650,93 @@ header img {
   }
 }
 
+.articles {
+  display: flex;
+  flex-direction: column;
+}
 .articles img {
   max-width: 100%;
+}
+.articles .block {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 30px;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+.articles .item {
+  font-size: 0.8125rem;
+  margin-top: 30px;
+  position: relative;
+  top: 0;
+  transition: 0.5s ease;
+}
+.articles .item:hover {
+  top: -10px;
+  transition: 0.5s ease;
+}
+.articles .img-container {
+  position: relative;
+  bottom: -4px;
+}
+.articles .img-container span {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  color: #fff;
+  padding: 0 10px;
+  font-size: 0.75rem;
+  line-height: 1.438rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.articles .text h3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+.articles .text .read-time {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(51, 54, 69, 0.5);
+  font-size: 0.85rem;
+}
+.articles .footer {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #ccc;
+  display: table;
+  width: 100%;
+  font-size: 0.875rem;
+}
+.articles .footer .avatar, .articles .footer .details {
+  display: table-cell;
+  vertical-align: middle;
+}
+.articles .footer .avatar {
+  border-radius: 50%;
+  width: 1%;
+  overflow: hidden;
+}
+.articles .footer img {
+  max-width: 47px;
+}
+.articles .footer time {
+  color: #666;
+}
+.articles .footer .details {
+  padding-left: 20px;
+  line-height: 1.375rem;
+}
+.articles .software .img-container span {
+  background-color: #67809F;
+}
+.articles .software .btn {
+  background-color: #f7b322;
+}
+.articles .software .text h3 {
+  color: #67809F;
 }
 
 #footer-nav {
@@ -651,6 +821,14 @@ header img {
   color: #fff;
 }
 
+#search-input {
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: 1px solid hsla(0, 0%, 100%, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding-right: 40px;
+}
+
 .btn {
   text-transform: uppercase;
   white-space: normal;
@@ -693,6 +871,69 @@ header img {
 
 .btn-google, .btn-trustpilot {
   margin-bottom: 0;
+}
+
+.btn-google {
+  background-color: #4387f6;
+}
+.btn-google:hover {
+  background-color: #1268f4;
+}
+
+.btn-trustpilot {
+  background-color: #00b67b;
+}
+.btn-trustpilot:hover {
+  background-color: #008359;
+}
+
+.btn-software {
+  background-color: #f7b322;
+}
+.btn-software:hover {
+  background-color: #de9a08;
+}
+
+.btn-it {
+  background-color: #4183d7;
+}
+.btn-it:hover {
+  background-color: #286abd;
+}
+
+.btn-digital {
+  background-color: #2ecc71;
+}
+.btn-digital:hover {
+  background-color: #25a25a;
+}
+
+.btn-telecoms {
+  background-color: #d64541;
+}
+.btn-telecoms:hover {
+  background-color: #bc2c28;
+}
+
+.btn-web {
+  background-color: #926fb1;
+}
+.btn-web:hover {
+  background-color: #79539a;
+}
+
+.btn-security {
+  background-color: #f62459;
+}
+.btn-security:hover {
+  background-color: #de093f;
+}
+
+.btn-developer {
+  background-color: #ce4125;
+}
+.btn-developer:hover {
+  background-color: #a3331d;
 }
 
 @font-face {

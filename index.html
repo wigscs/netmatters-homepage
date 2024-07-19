@@ -9,7 +9,7 @@
 
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="container">
+<body>
 
   <header>
     
@@ -28,7 +28,7 @@
     </button>
 
     <search>
-      <form method="get" action="index.html">
+      <form class="search-form" method="get" action="index.html">
         <input type="search" name="keyword" id="search-input" placeholder="Search...">
         <button type="submit"><span class="icon icon-search"></span></button>
       </form>
@@ -48,60 +48,60 @@
 
   <section class="services container">
     <h1>Our Services</h1>
-    <div class="card card--invert">
+    <div class="card software">
       <a href="#">
         <span class="icon icon-laptop"></span>
         <h2>Bespoke Software</h2>
         <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
-        <button type="button" class="btn">Read More</button>
+        <div class="btn">Read More</div>
       </a>
     </div>
-    <div class="card">
+    <div class="card it">
       <a href="#">
         <span class="icon icon-display"></span>
         <h2>IT Support</h2>
         <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
-        <button type="button" class="btn">Read More</button>
+        <div class="btn">Read More</div>
       </a>
     </div>
-    <div class="card">
+    <div class="card digital">
       <a href="#">
         <span class="icon icon-stats-bars2"></span>
         <h2>Digital Marketing</h2>
         <p>Driven brand awareness & ROI through creative digital marketing campaigns.</p>
-        <button type="button" class="btn">Read More</button>
+        <div class="btn">Read More</div>
       </a>
     </div>
-    <div class="card">
+    <div class="card telecoms">
       <a href="#">
         <span class="icon icon-phone"></span>
         <h2>Telecoms Services</h2>
         <p>Business telephony solutions including mobile & connectivity solutions.</p>
-        <button type="button" class="btn">Read More</button>
+        <div class="btn">Read More</div>
       </a>
     </div>
-    <div class="card">
+    <div class="card web">
       <a href="#">
         <span class="icon icon-embed2"></span>
         <h2>Web Design</h2>
         <p>User-centric design for businesses looking to make a lasting impression.</p>
-        <button type="button" class="btn">Read More</button>
+        <div class="btn">Read More</div>
       </a>
     </div>
-    <div class="card">
+    <div class="card security">
       <a href="#">
         <span class="icon icon-shield"></span>
         <h2>Cyber Security</h2>
         <p>Prevention, testing, consultancy & breach management services.</p>
-        <button type="button" class="btn">Read More</button>
+        <div class="btn">Read More</div>
       </a>
     </div>
-    <div class="card">
+    <div class="card developer">
       <a href="#">
         <span class="icon icon-library"></span>
         <h2>Developer Training</h2>
         <p>Web design & software training courses designed to secure a job in tech.</p>
-        <button type="button" class="btn">Read More</button>
+        <div class="btn">Read More</div>
       </a>
     </div>
     <h3>
@@ -150,13 +150,42 @@
     <a class="btn btn-primary btn-trustpilot" href="#">TrustPilot Reviews <span class="icon icon-arrow-right2"></span></a>
   </main>
 
-  <section class="articles container">
+  <section class="container">
 
     <h1>Latest News</h1>
+    <div class="articles">
+      <article class="item software">
+        <a href="#">
+          <div class="img-container">
+            <span href="#" title="View all: Bespoke Software / News">News</span>
+            <img src="img/articles/future-proof-your-business.png">
+          </div>
+          
+          <div class="block">
+            <div class="text">
+              <h3>Future-Proof Your Business Processes with Bes...
+                <span class="read-time">- 5 minute read</span>
+              </h3>
+              <p>Sometimes it can feel like there are limitless possibilities when it comes to new technologies helpi...</p>
+              <div class="btn" href="#">Read More</div>
+            </div>
 
-    <article>
+            <div class="footer">
+              <div class="avatar">
+                <img src="img/netmatters-ltd.webp" alt="Netmatters">
+              </div>
+              <div class="details">
+                <strong>Posted by Netmatters</strong><br>
+                <time datetime="2024-07-15">15th July 2024</time>
+              </div> 
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <article>
         <section class="img-container">
-          <img src="img/articles/future-proof-your-business.png">
+          <img src="img/articles/junes-notables-2024.webp">
           <a href="#" title="View all: Bespoke Software / News">News</a>
         </section>
     
@@ -172,54 +201,32 @@
         <footer>
           <img src="img/netmatters-ltd.webp" alt="Netmatters">
           <p>Posted by Netmatters</p>
-          <time datetime="2024-07-15">15th July 2024</time>
+          <time datetime="2024-07-8">8th July 2024</time>
         </footer>
-    </article>
-
-    <article>
-      <section class="img-container">
-        <img src="img/articles/junes-notables-2024.webp">
-        <a href="#" title="View all: Bespoke Software / News">News</a>
-      </section>
-  
-      <section class="text">
-        <h3>
-          Future-Proof Your Business Processes with Bes...
-          <span class="read-time">- 5 minute read</span>
-        </h3>
-        <p>Sometimes it can feel like there are limitless possibilities when it comes to new technologies helpi...</p>
-        <a href="#">Read More</a>
-      </section>
-
-      <footer>
-        <img src="img/netmatters-ltd.webp" alt="Netmatters">
-        <p>Posted by Netmatters</p>
-        <time datetime="2024-07-8">8th July 2024</time>
-      </footer>
-    </article>
+      </article>
+      
+      <article>
+        <section class="img-container">
+          <img src="img/articles/elliott-peacock.webp">
+          <a href="#" title="View all: Bespoke Software / News">News</a>
+        </section>
     
-    <article>
-      <section class="img-container">
-        <img src="img/articles/elliott-peacock.webp">
-        <a href="#" title="View all: Bespoke Software / News">News</a>
-      </section>
-  
-      <section class="text">
-        <h3>
-          Future-Proof Your Business Processes with Bes...
-          <span class="read-time">- 5 minute read</span>
-        </h3>
-        <p>Sometimes it can feel like there are limitless possibilities when it comes to new technologies helpi...</p>
-        <a href="#">Read More</a>
-      </section>
+        <section class="text">
+          <h3>
+            Future-Proof Your Business Processes with Bes...
+            <span class="read-time">- 5 minute read</span>
+          </h3>
+          <p>Sometimes it can feel like there are limitless possibilities when it comes to new technologies helpi...</p>
+          <a href="#">Read More</a>
+        </section>
 
-      <footer>
-        <img src="img/netmatters-ltd.webp" alt="Netmatters">
-        <p>Posted by Netmatters</p>
-        <time datetime="2024-07-5">5th July 2024</time>
-      </footer>
-    </article>
-
+        <footer>
+          <img src="img/netmatters-ltd.webp" alt="Netmatters">
+          <p>Posted by Netmatters</p>
+          <time datetime="2024-07-5">5th July 2024</time>
+        </footer>
+      </article>
+    </div>
     <a href="#">View All</a>
   </section>
 
