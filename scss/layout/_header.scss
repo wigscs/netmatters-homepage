@@ -1,5 +1,55 @@
 // Header
 .main-header {
+  padding: 20px 0;
+
+  > div {
+    display: inline-grid;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between; 
+    grid-template-areas: 
+      "logo     logo    nav"
+      "search   search  search";
+    grid-gap: 15px;
+    .logo {
+      grid-area: logo;
+    }
+    .nav {
+      font-size: 1.5rem;
+      grid-area: nav;
+      text-align: center;
+      a {
+        margin-right: 10px;
+      }
+    }
+    .search {
+      width: 100%;
+      grid-area: search;
+      
+      .search-input {
+        background-color: rgba(0, 0, 0, .1);
+        outline: 1px solid hsla(0, 0%, 100%, .2);
+        border: 2px solid rgba(0, 0, 0, .1);
+        width: 100%;
+        padding: 5px 40px 5px 15px;
+        height: 47px;
+      }
+
+      form {
+        position: relative;
+
+        button {
+          font-size: 1.5rem;
+          position: absolute;
+          right: 5px;
+          top: 10px;
+          border: none;
+          background: transparent;
+        }
+      }
+    }
+  }
+
   img {
     max-width: 100%;
   }

@@ -14,27 +14,30 @@
 <body>
 
   <header class="main-header">
-    
-    <a href="#">
-      <img class="logo" src="img/f-logo.webp" alt="Netmatters&trade;">
-    </a>
-    
-    <a class="hidden" href="#">Support</a>
-    <a class="hidden" href="#">Contact</a>
+    <div class="container">
+      <a class="logo" href="#">
+        <img class="logo" src="img/f-logo.webp" alt="Netmatters&trade;">
+      </a>
+      
+      <!-- <a class="hidden" href="#">Support</a>
+      <a class="hidden" href="#">Contact</a> -->
+      
+      <div class="nav">
+        <a href="tel:+#">
+          <span class="icon icon-phone"></span>
+        </a>
+        <button class="btn btn-hamburger" type="button">
+          <span class="icon icon-menu"></span>
+        </button>
+      </div>
 
-    <a href="tel:+#">
-      <span class="icon icon-phone"></span>
-    </a>
-    <button class="btn btn-hamburger" type="button">
-      <span class="icon icon-menu"></span>
-    </button>
-
-    <search>
-      <form class="search-form" method="get" action="index.html">
-        <input class="search-input" type="search" name="keyword" placeholder="Search...">
-        <button type="submit"><span class="icon icon-search"></span></button>
-      </form>
-    </search>
+      <search class="search">
+        <form class="search-form" method="get" action="index.html">
+          <input class="search-input" type="search" name="keyword" placeholder="Search...">
+          <button type="submit"><span class="icon icon-search"></span></button>
+        </form>
+      </search>
+    </div>
   </header>
   
   <section class="banner">
