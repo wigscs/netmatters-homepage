@@ -319,13 +319,6 @@ btn-primary-background:hover: #121318 *
 footer-background:            #323544 *
 social-logo-background:       #212330 *
 */
-@font-face {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(../fonts/Poppins-Regular.woff2) format("woff2");
-}
 *,
 *::before,
 *::after {
