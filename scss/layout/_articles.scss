@@ -2,8 +2,14 @@
 .articles {
   display: flex;
   flex-direction: column;
-  img {
-    max-width: 100%;
+  margin-bottom: 50px;
+
+  h1 {
+    margin-top: 50px;
+    font-weight: 600;
+  }
+  .img-container img {
+    width: 100%;
   }
   .block {
     display: block;
@@ -96,6 +102,35 @@
     }
     .text h3 {
       color: $software-bg;
+    }
+  }
+
+  .security {
+    .img-container span, .btn {
+      background-color: $security;
+    }
+    .text h3 {
+      color: $security;
+    }
+  }
+
+  .busdev {
+    .img-container span, .btn {
+      background-color: $busdev;
+    }
+    .text h3 {
+      color: $busdev;
+    }
+  }
+
+  .view-all {
+    text-align: center;
+    color: $brand-dark;
+    font-weight: 600;
+    font-size: 1.625rem;
+    margin-top: 50px;
+    &:hover {
+      text-decoration: underline;
     }
   }
 } 
