@@ -724,23 +724,21 @@ p, blockquote {
 }
 
 @media (min-width: 768px) {
-  .services {
+  .service-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-right: -15px;
+    margin-left: -15px;
   }
   .card {
     width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
   .card.telecoms, .card.web, .card.security, .card.developer {
     width: 50%;
-  }
-  .card.web, .card.developer {
-    padding-left: 15px;
-  }
-  .card.security, .card.telecoms {
-    padding-right: 15px;
   }
 }
 .logo-list {

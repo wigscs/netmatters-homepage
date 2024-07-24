@@ -135,27 +135,23 @@
 }
 
 @media (min-width: 768px) {
-  .services {
+  .service-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-right: -15px;
+    margin-left: -15px;
   }
   .card {
     width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
     &.telecoms,
     &.web,
     &.security,
     &.developer {
       width: 50%;
-    }
-    &.web,
-    &.developer {
-      padding-left: 15px;
-    }
-    &.security,
-    &.telecoms {
-      padding-right: 15px;
     }
   }
 }
