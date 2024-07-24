@@ -78,6 +78,9 @@
     }
     .search-lg {
       display: block;
+      .search-form {
+        display: flex;
+      }
       .search-input {
         background-color: $white;
         width: 174px;

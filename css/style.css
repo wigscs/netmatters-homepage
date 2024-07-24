@@ -415,6 +415,11 @@ p, blockquote {
   left: 0;
 }
 
+@media (min-width: 768px) {
+  .display-sm {
+    display: none;
+  }
+}
 .main-header .inner {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -491,6 +496,9 @@ p, blockquote {
   .main-header .inner .search-lg {
     display: block;
   }
+  .main-header .inner .search-lg .search-form {
+    display: flex;
+  }
   .main-header .inner .search-lg .search-input {
     background-color: #fff;
     width: 174px;
@@ -531,10 +539,13 @@ p, blockquote {
   position: absolute;
   z-index: 1;
   height: 100%;
+  width: 100%;
   opacity: 0.5;
 }
 .banner img {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .banner .content {
   padding: 3.75rem;
@@ -562,6 +573,7 @@ p, blockquote {
   margin-bottom: 15px;
   margin-top: 50px;
   font-weight: 400;
+  display: inline-block;
 }
 .services h2 {
   font-size: 1.3rem;
@@ -579,6 +591,18 @@ p, blockquote {
   line-height: 1.375rem;
   margin-bottom: 13px;
   font-weight: 400;
+}
+.services .view-work-top {
+  display: none;
+  font-size: 2.25rem;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .services .view-work-top {
+    display: inline-block;
+    float: right;
+  }
 }
 .services .card a {
   display: block;
@@ -684,6 +708,17 @@ p, blockquote {
   background-color: #fff;
 }
 
+@media (min-width: 768px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .card.telecoms, .card.web, .card.security, .card.developer {
+    display: flex;
+    width: 50%;
+  }
+}
 .logo-list {
   white-space: nowrap;
   overflow: hidden;

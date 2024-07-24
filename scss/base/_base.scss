@@ -91,3 +91,10 @@ p, blockquote {
   transition: all .5s;
   left: 0;
 }
+
+@media (min-width: 768px) {
+  .display-sm {
+    display: none;
+  }
+}
+
