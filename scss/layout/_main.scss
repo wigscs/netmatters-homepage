@@ -6,6 +6,10 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
+  .btn-primary {
+    margin-right: 10px;
+  }
+  
   p a:hover {
     text-decoration: underline;
   }
@@ -28,12 +32,12 @@
     }
   }
 
-  @media (max-width: 603px) {
+  @media (max-width: 623px) {
     .btn-google {
       margin-bottom: 20px;
     }
   }
-  @media (max-width: 538px) {
+  @media (max-width: 558px) {
     .btn-primary:first-of-type {
       margin-bottom: 20px;
     }

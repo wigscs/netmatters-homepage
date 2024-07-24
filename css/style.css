@@ -394,6 +394,10 @@ p, blockquote {
   margin-bottom: 25px;
 }
 
+.flex {
+  display: flex;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -403,6 +407,11 @@ p, blockquote {
 @media (min-width: 768px) {
   .container {
     width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
   }
 }
 
@@ -519,6 +528,7 @@ p, blockquote {
     vertical-align: bottom;
     background-color: #999aa2;
     color: #fff;
+    cursor: pointer;
   }
   .main-header .inner .call-btn {
     display: none;
@@ -577,6 +587,8 @@ p, blockquote {
 }
 .services h2 {
   font-size: 1.3rem;
+  padding-bottom: 10px;
+  margin-bottom: 11px;
 }
 .services h3 {
   text-align: center;
@@ -611,7 +623,7 @@ p, blockquote {
   border: 1px solid #ccc;
   border-radius: 20px;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-  margin: 30px 0;
+  margin: 30px 0 0;
   position: relative;
   top: 0;
   transition: 0.5s ease;
@@ -619,9 +631,9 @@ p, blockquote {
 .services .card a .icon {
   display: inline-block;
   color: #fff;
-  padding: 20px;
+  padding: 15px;
   border-radius: 50%;
-  font-size: 1.57rem;
+  font-size: 1.7rem;
   margin: 0 auto 17px;
 }
 .services .card a:hover {
@@ -697,6 +709,9 @@ p, blockquote {
   color: #f62459;
   background-color: #fff;
 }
+.services .developer {
+  margin-bottom: 20px;
+}
 .services .developer .btn, .services .developer .icon {
   background-color: #ce4125;
 }
@@ -711,12 +726,21 @@ p, blockquote {
 @media (min-width: 768px) {
   .services {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    width: 100%;
   }
   .card.telecoms, .card.web, .card.security, .card.developer {
-    display: flex;
     width: 50%;
+  }
+  .card.web, .card.developer {
+    padding-left: 15px;
+  }
+  .card.security, .card.telecoms {
+    padding-right: 15px;
   }
 }
 .logo-list {
@@ -727,6 +751,7 @@ p, blockquote {
   margin: 50px 0;
 }
 .logo-list img {
+  margin: 0 50px;
   max-height: 100%;
   filter: grayscale(1);
 }
@@ -739,6 +764,9 @@ p, blockquote {
   background-color: #333645;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+.home-main .btn-primary {
+  margin-right: 10px;
 }
 .home-main p a:hover {
   text-decoration: underline;
@@ -758,12 +786,12 @@ p, blockquote {
   font-weight: 600;
   letter-spacing: 1px;
 }
-@media (max-width: 603px) {
+@media (max-width: 623px) {
   .home-main .btn-google {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 538px) {
+@media (max-width: 558px) {
   .home-main .btn-primary:first-of-type {
     margin-bottom: 20px;
   }
@@ -777,6 +805,7 @@ p, blockquote {
 .articles h1 {
   margin-top: 50px;
   font-weight: 600;
+  display: inline-block;
 }
 .articles .img-container img {
   width: 100%;
@@ -874,15 +903,38 @@ p, blockquote {
 .articles .busdev .text h3 {
   color: #db8c0d;
 }
-.articles .view-all {
+.articles .view-all, .articles .view-all--top {
   text-align: center;
   color: #121419;
   font-weight: 600;
   font-size: 1.625rem;
   margin-top: 50px;
 }
-.articles .view-all:hover {
+.articles .view-all:hover, .articles .view-all--top:hover {
   text-decoration: underline;
+}
+.articles .view-all--top {
+  float: right;
+  display: none;
+}
+@media (min-width: 768px) {
+  .articles .view-all--top {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) {
+  .articles .article-list {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+  }
+  .articles .article-list > article {
+    width: 50%;
+    padding: 0 15px;
+  }
+  .articles .article-list > :last-child {
+    display: none;
+  }
 }
 
 .footer-nav {
@@ -892,6 +944,7 @@ p, blockquote {
 }
 .footer-nav img {
   max-width: 100%;
+  max-height: 65px;
 }
 .footer-nav h1, .footer-nav h2, .footer-nav h3, .footer-nav h4 {
   color: #fff;
@@ -925,9 +978,12 @@ p, blockquote {
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  max-width: 320px;
+  min-width: 215px;
 }
 .social-logos .btn-primary {
-  padding: 14px 22px;
+  font-size: 1.7rem;
+  padding: 12px 20px;
   margin: 0 10px 10px 0;
   border-radius: 0;
 }
@@ -956,17 +1012,49 @@ p, blockquote {
 .footer-bottom {
   background-color: #212330;
   color: #fff;
-  font-size: 0.8125rem;
   padding-top: 10px;
 }
+.footer-bottom .flex {
+  flex-direction: column;
+}
 .footer-bottom p {
+  font-size: 0.8125rem;
   margin: 0;
   padding: 5px 0 10px;
+  line-height: 1.1rem;
 }
 .footer-bottom a {
   color: #fff;
 }
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
 
+@media (min-width: 768px) {
+  .footer-bottom .flex {
+    flex-direction: row;
+  }
+  .footer-bottom span {
+    margin-left: 7px;
+  }
+  .footer-bottom span:last-child::before {
+    margin-right: 7px;
+    content: "-";
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-links > div {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .footer-links > div {
+    width: 25%;
+    padding: 0 15px;
+  }
+}
 .btn {
   text-transform: uppercase;
   white-space: normal;
@@ -3109,6 +3197,11 @@ p, blockquote {
   font-size: 50px;
   margin-bottom: 25px;
   display: inline-block;
+}
+
+.icon {
+  position: relative;
+  top: 2px;
 }
 
 .hidden, .clients div {
