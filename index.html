@@ -13,6 +13,13 @@
 
 </head>
 <body>
+  <!-- TODO: Manage consent button -->
+  <!-- TODO: Hamburger icon span element instead of icon -->
+  <!-- TODO: Hamburger icon background -->
+  <!-- TODO: Logo list margin and padding -->
+  <!-- TODO: Search placeholder font size -->
+  <!-- TODO: Social links padding -->
+  <!-- TODO: Bottom footer line-height, spacing, use flex -->
   <!-- HACKY Fix for icons on GH preview -->
   <style>
   @font-face {
@@ -26,28 +33,36 @@
   </style>
   <header class="main-header">
     <div class="container">
-      <a class="logo" href="#">
-        <img class="logo" src="img/f-logo.webp" alt="Netmatters&trade;">
-      </a>
-      
-      <!-- <a class="hidden" href="#">Support</a>
-      <a class="hidden" href="#">Contact</a> -->
-      
-      <div class="nav">
-        <a href="tel:+#">
-          <span class="icon icon-phone"></span>
+      <div class="inner">
+        <a class="logo" href="#">
+          <img class="logo" src="img/f-logo.webp" alt="Netmatters&trade;">
         </a>
-        <button class="btn btn-hamburger" type="button">
-          <span class="icon icon-menu"></span>
-        </button>
-      </div>
+        
+        <!-- <a class="hidden" href="#">Support</a>
+        <a class="hidden" href="#">Contact</a> -->
+        <search class="search-lg">
+          <form class="search-form" method="get" action="index.html">
+            <input class="search-input" type="search" name="keyword" placeholder="Search...">
+            <button type="submit"><span class="icon icon-search"></span></button>
+          </form>
+        </search>
 
-      <search class="search">
-        <form class="search-form" method="get" action="index.html">
-          <input class="search-input" type="search" name="keyword" placeholder="Search...">
-          <button type="submit"><span class="icon icon-search"></span></button>
-        </form>
-      </search>
+        <div class="nav">
+          <a class="call-btn" href="tel:+#">
+            <span class="icon icon-phone"></span>
+          </a>
+          <button class="btn btn-hamburger" type="button">
+            <span></span>
+          </button>
+        </div>
+
+        <search class="search-sm">
+          <form class="search-form" method="get" action="index.html">
+            <input class="search-input" type="search" name="keyword" placeholder="Search...">
+            <button type="submit"><span class="icon icon-search"></span></button>
+          </form>
+        </search>
+      </div>
     </div>
   </header>
   
@@ -56,7 +71,7 @@
       <img src="img/banner-web.webp" alt="The East Of England's Leading Technology Company Norwich, Norfolk, Cambridge, North London, Essex, Hertfordshire, Enfield">
     </div>
     <div class="content container">
-      <h1>The East Of England's Leading Technology Company</h1>
+      <h1>The East Of England's Leading <br>Technology Company</h1>
       <p>Performance-driven digital and technology services <br> with complete transparency.</p>
       <a class="btn btn-lg btn-web" href="#">Why Choose Us? <span class="icon icon-arrow-right2"></span></a>
     </div>
@@ -64,61 +79,63 @@
 
   <section class="services container">
     <h1>Our Services</h1>
-    <div class="card software">
-      <a href="#">
-        <span class="icon icon-laptop"></span>
-        <h2>Bespoke Software</h2>
-        <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
-        <div class="btn">Read More</div>
-      </a>
-    </div>
-    <div class="card it">
-      <a href="#">
-        <span class="icon icon-display"></span>
-        <h2>IT Support</h2>
-        <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
-        <div class="btn">Read More</div>
-      </a>
-    </div>
-    <div class="card digital">
-      <a href="#">
-        <span class="icon icon-stats-bars2"></span>
-        <h2>Digital Marketing</h2>
-        <p>Driven brand awareness & ROI through creative digital marketing campaigns.</p>
-        <div class="btn">Read More</div>
-      </a>
-    </div>
-    <div class="card telecoms">
-      <a href="#">
-        <span class="icon icon-phone"></span>
-        <h2>Telecoms Services</h2>
-        <p>Business telephony solutions including mobile & connectivity solutions.</p>
-        <div class="btn">Read More</div>
-      </a>
-    </div>
-    <div class="card web">
-      <a href="#">
-        <span class="icon icon-embed2"></span>
-        <h2>Web Design</h2>
-        <p>User-centric design for businesses looking to make a lasting impression.</p>
-        <div class="btn">Read More</div>
-      </a>
-    </div>
-    <div class="card security">
-      <a href="#">
-        <span class="icon icon-shield"></span>
-        <h2>Cyber Security</h2>
-        <p>Prevention, testing, consultancy & breach management services.</p>
-        <div class="btn">Read More</div>
-      </a>
-    </div>
-    <div class="card developer">
-      <a href="#">
-        <span class="icon icon-library"></span>
-        <h2>Developer Training</h2>
-        <p>Web design & software training courses designed to secure a job in tech.</p>
-        <div class="btn">Read More</div>
-      </a>
+    <div>
+      <div class="card software">
+        <a href="#">
+          <span class="icon icon-laptop"></span>
+          <h2>Bespoke Software</h2>
+          <p>Bespoke software solutions for all your business needs including integrations and reporting.</p>
+          <div class="btn">Read More</div>
+        </a>
+      </div>
+      <div class="card it">
+        <a href="#">
+          <span class="icon icon-display"></span>
+          <h2>IT Support</h2>
+          <p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
+          <div class="btn">Read More</div>
+        </a>
+      </div>
+      <div class="card digital">
+        <a href="#">
+          <span class="icon icon-stats-bars2"></span>
+          <h2>Digital Marketing</h2>
+          <p>Driven brand awareness & ROI through creative digital marketing campaigns.</p>
+          <div class="btn">Read More</div>
+        </a>
+      </div>
+      <div class="card telecoms">
+        <a href="#">
+          <span class="icon icon-phone"></span>
+          <h2>Telecoms Services</h2>
+          <p>Business telephony solutions including mobile & connectivity solutions.</p>
+          <div class="btn">Read More</div>
+        </a>
+      </div>
+      <div class="card web">
+        <a href="#">
+          <span class="icon icon-embed2"></span>
+          <h2>Web Design</h2>
+          <p>User-centric design for businesses looking to make a lasting impression.</p>
+          <div class="btn">Read More</div>
+        </a>
+      </div>
+      <div class="card security">
+        <a href="#">
+          <span class="icon icon-shield"></span>
+          <h2>Cyber Security</h2>
+          <p>Prevention, testing, consultancy & breach management services.</p>
+          <div class="btn">Read More</div>
+        </a>
+      </div>
+      <div class="card developer">
+        <a href="#">
+          <span class="icon icon-library"></span>
+          <h2>Developer Training</h2>
+          <p>Web design & software training courses designed to secure a job in tech.</p>
+          <div class="btn">Read More</div>
+        </a>
+      </div>
     </div>
     <h3>
       <a href="#">View Our Work <span class="icon icon-arrow-right2"></span></a>
@@ -140,30 +157,32 @@
     <img src="img/accreditations/cyber-essentials-colour.webp">
   </aside>
 
-  <main id="home-main" class="container">
-    <h1>Welcome To Netmatters</h1>
-    <p>Netmatters is a leading <a href="#">Bespoke Software</a>, <a href="#">IT Support</a>, and <a href="#">Digital Marketing</a> company based in the East of England with offices in <a href="#">Cambridge</a>, <a href="#">Wymondham</a>, and <a href="#">Great Yarmouth</a>.</p>
-    <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
-    <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
-    <a class="btn btn-primary" href="#">Why Choose Us? <span class="icon icon-arrow-right2"></span></a>
-    <a class="btn btn-primary" href="#">Our Culture <span class="icon icon-arrow-right2"></span></a>
+  <main class="home-main">
+    <div class="container">
+      <h1>Welcome To Netmatters</h1>
+      <p>Netmatters is a leading <a href="#">Bespoke Software</a>, <a href="#">IT Support</a>, and <a href="#">Digital Marketing</a> company based in the East of England with offices in <a href="#">Cambridge</a>, <a href="#">Wymondham</a>, and <a href="#">Great Yarmouth</a>.</p>
+      <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
+      <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
+      <a class="btn btn-primary" href="#">Why Choose Us? <span class="icon icon-arrow-right2"></span></a>
+      <a class="btn btn-primary" href="#">Our Culture <span class="icon icon-arrow-right2"></span></a>
 
-    <h2>What Our Clients Think</h2>
-    <span class="icon icon-star-full"></span>
-    <span class="icon icon-star-full"></span>
-    <span class="icon icon-star-full"></span>
-    <span class="icon icon-star-full"></span>
-    <span class="icon icon-star-full"></span>
+      <h2>What Our Clients Think</h2>
+      <span class="icon icon-star-full"></span>
+      <span class="icon icon-star-full"></span>
+      <span class="icon icon-star-full"></span>
+      <span class="icon icon-star-full"></span>
+      <span class="icon icon-star-full"></span>
 
-    <figure class="hp-review">
-      <blockquote>
-        Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!
-      </blockquote>
-      <figcaption>Eleanor Bishop, Head of Marketing - <a href="#">Ashcroft Partnership LLP</a></figcaption>
-    </figure>
+      <figure class="hp-review">
+        <blockquote>
+          Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!
+        </blockquote>
+        <figcaption>Eleanor Bishop, Head of Marketing - <a href="#">Ashcroft Partnership LLP</a></figcaption>
+      </figure>
 
-    <a class="btn btn-primary btn-google" href="#">Google Reviews <span class="icon icon-arrow-right2"></span></a>
-    <a class="btn btn-primary btn-trustpilot" href="#">TrustPilot Reviews <span class="icon icon-arrow-right2"></span></a>
+      <a class="btn btn-primary btn-google" href="#">Google Reviews <span class="icon icon-arrow-right2"></span></a>
+      <a class="btn btn-primary btn-trustpilot" href="#">TrustPilot Reviews <span class="icon icon-arrow-right2"></span></a>
+    </div>
   </main>
 
   <section class="articles container">
@@ -355,67 +374,71 @@
     </span>
   </aside>
 
-  <footer class="footer-nav container">
-    <img src="img/nm-logo-white-med.webp" alt="Netmatters&trade;">
+  <footer class="footer-nav">
+    <div class="container">
+      <img src="img/nm-logo-white-med.webp" alt="Netmatters&trade;">
 
-    <h4>Follow us on:</h4>
-    <div class="social-logos">
-      <a class="btn btn-primary facebook" href="#"><span class="icon icon-facebook"></span></a>
-      <a class="btn btn-primary linkedin" href="#"><span class="icon icon-linkedin2"></span></a>
-      <a class="btn btn-primary twitter" href="#"><span class="icon icon-twitter"></span></a>
-      <a class="btn btn-primary instagram" href="#"><span class="icon icon-instagram"></span></a>
+      <h4>Follow us on:</h4>
+      <div class="social-logos">
+        <a class="btn btn-primary facebook" href="#"><span class="icon icon-facebook"></span></a>
+        <a class="btn btn-primary linkedin" href="#"><span class="icon icon-linkedin2"></span></a>
+        <a class="btn btn-primary twitter" href="#"><span class="icon icon-twitter"></span></a>
+        <a class="btn btn-primary instagram" href="#"><span class="icon icon-instagram"></span></a>
+      </div>
+
+      <h4>About Netmatters</h4>
+      <ul>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Our Careers</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+        <li><a href="#">Data Retention &amp; Disposal Policy</a></li>
+        <li><a href="#">CCTV Policy</a></li>
+        <li><a href="#">Environmental Policy</a></li>
+        <li><a href="#">Terms &amp; Conditions</a></li>
+      </ul>
+
+      <h4>Our Services</h4>
+      <ul>
+        <li><a href="#">Bespoke Software</a></li>
+        <li><a href="#">IT Support</a></li>
+        <li><a href="#">Digital Marketing</a></li>
+        <li><a href="#">Telecoms Services</a></li>
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">Cyber Security</a></li>
+        <li><a href="#">Developer Training</a></li>
+      </ul>
+
+      <h4>Our Industries</h4>
+      <ul>
+        <li><a href="#">Financial Services</a></li>
+        <li><a href="#">Construction</a></li>
+        <li><a href="#">Retail & E-Commerce</a></li>
+        <li><a href="#">Non-Profits</a></li>
+        <li><a href="#">SME's</a></li>
+        <li><a href="#">Healthcare</a></li>
+        <li><a href="#">Education & Training</a></li>
+        <li><a href="#">Travel & Leisure</a></li>
+      </ul>
+
+      <h4>Locations</h4>
+      <ul>
+        <li><a href="#">Cambridge Office</a></li>
+        <li><a href="#">Wymondham Office</a></li>
+        <li><a href="#">Great Yarmouth Office</a></li>
+      </ul>
     </div>
-
-    <h4>About Netmatters</h4>
-    <ul>
-      <li><a href="#">News</a></li>
-      <li><a href="#">Our Careers</a></li>
-      <li><a href="#">Our Team</a></li>
-      <li><a href="#">Contact Us</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-      <li><a href="#">Cookie Policy</a></li>
-      <li><a href="#">Data Retention &amp; Disposal Policy</a></li>
-      <li><a href="#">CCTV Policy</a></li>
-      <li><a href="#">Environmental Policy</a></li>
-      <li><a href="#">Terms &amp; Conditions</a></li>
-    </ul>
-
-    <h4>Our Services</h4>
-    <ul>
-      <li><a href="#">Bespoke Software</a></li>
-      <li><a href="#">IT Support</a></li>
-      <li><a href="#">Digital Marketing</a></li>
-      <li><a href="#">Telecoms Services</a></li>
-      <li><a href="#">Web Design</a></li>
-      <li><a href="#">Cyber Security</a></li>
-      <li><a href="#">Developer Training</a></li>
-    </ul>
-
-    <h4>Our Industries</h4>
-    <ul>
-      <li><a href="#">Financial Services</a></li>
-      <li><a href="#">Construction</a></li>
-      <li><a href="#">Retail & E-Commerce</a></li>
-      <li><a href="#">Non-Profits</a></li>
-      <li><a href="#">SME's</a></li>
-      <li><a href="#">Healthcare</a></li>
-      <li><a href="#">Education & Training</a></li>
-      <li><a href="#">Travel & Leisure</a></li>
-    </ul>
-
-    <h4>Locations</h4>
-    <ul>
-      <li><a href="#">Cambridge Office</a></li>
-      <li><a href="#">Wymondham Office</a></li>
-      <li><a href="#">Great Yarmouth Office</a></li>
-    </ul>
   </footer>
-  <footer class="footer-bottom container">
-    <p>
-      &copy; Copyright Netmatters 2024.<br>
-      All rights reserved.<br>
-      <a href="#">Sitemap</a>
-    </p>
+  <footer class="footer-bottom">
+    <div class="container">
+      <p>
+        &copy; Copyright Netmatters 2024.<br>
+        All rights reserved.<br>
+        <a href="#">Sitemap</a>
+      </p>
+    </div>
   </footer>
 </body>
 </html>

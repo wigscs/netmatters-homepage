@@ -400,6 +400,11 @@ p, blockquote {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
 
 #container {
   overflow: hidden;
@@ -410,10 +415,9 @@ p, blockquote {
   left: 0;
 }
 
-.main-header {
-  padding: 20px 0;
-}
-.main-header > div {
+.main-header .inner {
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: inline-grid;
   width: 100%;
   align-items: center;
@@ -421,55 +425,97 @@ p, blockquote {
   grid-template-areas: "logo     logo    nav" "search   search  search";
   grid-gap: 15px;
 }
-.main-header > div .logo {
+.main-header .inner .logo {
   grid-area: logo;
 }
-.main-header > div .nav {
-  font-size: 1.5rem;
+.main-header .inner .nav {
+  display: table;
+  font-size: 1.8rem;
   grid-area: nav;
   text-align: center;
 }
-.main-header > div .nav a {
-  margin-right: 10px;
+.main-header .inner .call-btn {
+  display: table-cell;
+  vertical-align: middle;
 }
-.main-header > div .search {
-  width: 100%;
-  grid-area: search;
+.main-header .inner img {
+  max-width: 100%;
 }
-.main-header > div .search .search-input {
+
+.search-lg {
+  display: none;
+}
+
+.search-input {
   background-color: rgba(0, 0, 0, 0.1);
   outline: 1px solid hsla(0, 0%, 100%, 0.2);
   border: 2px solid rgba(0, 0, 0, 0.1);
   width: 100%;
   padding: 5px 40px 5px 15px;
   height: 47px;
+  font-size: 14px;
 }
-.main-header > div .search form {
+
+.search-sm,
+.search-lg {
+  grid-area: search;
+}
+
+.search-sm {
+  width: 100%;
+}
+.search-sm form {
   position: relative;
 }
-.main-header > div .search form button {
-  font-size: 1.5rem;
+.search-sm form button {
+  height: 100%;
+  cursor: pointer;
+  font-size: 1.3rem;
   position: absolute;
   right: 5px;
-  top: 10px;
   border: none;
   background: transparent;
 }
-.main-header img {
-  max-width: 100%;
+.search-sm form button .icon-search {
+  position: relative;
+  top: 2px;
 }
 
-.btn-hamburger {
-  background-color: #333645;
-  height: 56px;
-  width: 63px;
-  border: none;
-  cursor: pointer;
+@media (min-width: 768px) {
+  .main-header .inner {
+    display: flex;
+  }
+  .main-header .inner .search-sm {
+    display: none;
+  }
+  .main-header .inner .search-lg {
+    display: block;
+  }
+  .main-header .inner .search-lg .search-input {
+    background-color: #fff;
+    width: 174px;
+    height: 56px;
+    padding: 5px 15px;
+    margin: 0;
+    display: inline-block;
+  }
+  .main-header .inner .search-lg button {
+    display: inline-block;
+    margin: 0;
+    outline: none;
+    padding: 7px 20px 3px;
+    height: 56px;
+    font-size: 1.5rem;
+    border-radius: 0 3px 3px 0;
+    border: none;
+    vertical-align: bottom;
+    background-color: #999aa2;
+    color: #fff;
+  }
+  .main-header .inner .call-btn {
+    display: none;
+  }
 }
-.btn-hamburger:hover {
-  background-color: #121419;
-}
-
 .banner {
   height: 550px;
   position: relative;
@@ -541,7 +587,7 @@ p, blockquote {
   border: 1px solid #ccc;
   border-radius: 20px;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-  margin: 40px 0;
+  margin: 30px 0;
   position: relative;
   top: 0;
   transition: 0.5s ease;
@@ -653,37 +699,37 @@ p, blockquote {
   filter: initial;
 }
 
-#home-main {
+.home-main {
   color: #fff;
   background-color: #333645;
   padding-top: 50px;
   padding-bottom: 50px;
 }
-#home-main p a:hover {
+.home-main p a:hover {
   text-decoration: underline;
 }
-#home-main h1, #home-main h2, #home-main h3, #home-main p a {
+.home-main h1, .home-main h2, .home-main h3, .home-main p a {
   color: inherit;
   font-weight: 600;
 }
-#home-main h2 {
+.home-main h2 {
   font-size: 2.25rem;
   margin: 0 0 28px;
 }
-#home-main p {
+.home-main p {
   line-height: 30px;
 }
-#home-main p:first-of-type {
+.home-main p:first-of-type {
   font-weight: 600;
   letter-spacing: 1px;
 }
 @media (max-width: 603px) {
-  #home-main .btn-google {
+  .home-main .btn-google {
     margin-bottom: 20px;
   }
 }
 @media (max-width: 538px) {
-  #home-main .btn-primary:first-of-type {
+  .home-main .btn-primary:first-of-type {
     margin-bottom: 20px;
   }
 }
@@ -906,6 +952,36 @@ p, blockquote {
 }
 .btn:active {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn-hamburger {
+  background-color: #333645;
+  height: 56px;
+  width: 63px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.btn-hamburger:hover {
+  background-color: #121419;
+}
+.btn-hamburger span {
+  display: block;
+  background-color: #fff;
+  height: 4px;
+}
+.btn-hamburger span::before, .btn-hamburger span::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  height: 4px;
+  position: relative;
+}
+.btn-hamburger span::before {
+  top: -10px;
+}
+.btn-hamburger span::after {
+  bottom: -6px;
 }
 
 .btn-web {

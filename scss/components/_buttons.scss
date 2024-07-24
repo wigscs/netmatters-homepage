@@ -23,6 +23,39 @@
   }
 }
 
+.btn-hamburger {
+  background-color: $brand-light;
+  height: 56px;
+  width: 63px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  &:hover {
+    background-color: $brand-dark;
+  }
+  span {
+    display: block;
+    background-color: $white;
+    height: 4px;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      background-color: $white;
+      height: 4px;
+      position: relative;
+    }
+    &::before {
+      top: -10px;
+    }
+
+    &::after {
+      bottom: -6px;
+    }
+  }
+}
+
 .btn-web {
   background-color: #926fb1;
   &:hover {
