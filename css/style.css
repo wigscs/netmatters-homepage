@@ -458,7 +458,6 @@ p, blockquote {
   width: 63px;
   border: none;
   cursor: pointer;
-  margin-left: 20px;
 }
 .btn-hamburger:hover {
   background-color: #121419;
@@ -595,13 +594,10 @@ p, blockquote {
 .main-header .inner .logo {
   grid-area: logo;
 }
-.main-header .inner .nav {
-  display: table;
-  font-size: 1.8rem;
-  grid-area: nav;
-  text-align: center;
-}
 .main-header .inner .call-btn {
+  text-align: center;
+  grid-area: nav;
+  font-size: 1.8rem;
   display: table-cell;
   vertical-align: middle;
 }
@@ -648,9 +644,16 @@ p, blockquote {
   top: 2px;
 }
 
+.actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
 @media (min-width: 768px) {
   .main-header .inner {
     display: flex;
+    gap: 30px;
   }
   .main-header .inner .search-sm {
     display: none;
