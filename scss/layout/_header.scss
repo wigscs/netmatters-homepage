@@ -99,7 +99,7 @@
         border-radius: 0 3px 3px 0;
         border: none;
         vertical-align: bottom;
-        background-color: #999aa2;
+        // background-color: #999aa2;
         color: #fff;
         cursor: pointer;
       }
@@ -109,3 +109,26 @@
     }
   }
 }
+@media (max-width: 992px) {
+  .btn-contact, .btn-support {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .main-header .inner {
+    .search-form .search-input {
+      display: none;
+    }
+    .search-lg .search-form button {
+      border-radius: 3px;
+    }
+  }
+}
+@media (min-width: 1260px) {
+  .main-header .inner {
+    .search-form .search-input {
+      display: initial;
+    }
+  }
+}
+

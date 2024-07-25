@@ -119,3 +119,14 @@
 .btn-developer {
   @include btn-hover($developer);
 }
+
+.btn-contact,
+.btn-default {
+  @include btn-hover($btn-default);
+}
+
+.btn-contact, .btn-support {
+  font-size: 1.125rem;
+  height: 56px;
+  padding-top: 10px;
+}

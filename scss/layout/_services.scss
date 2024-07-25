@@ -19,6 +19,7 @@
     text-align: center;
     font-weight: 600;
     margin-bottom: 50px;
+    margin-top: 30px;
     a:hover {
       text-decoration: underline;
     }
@@ -128,7 +129,6 @@
   }
 
   .developer {
-    margin-bottom: 20px;
     @include card-hover($developer);
   }
 
@@ -155,9 +155,15 @@
     }
   }
 }
+
 @media (min-width: 992px) {
   .card {
     width: 33.33%;
+    a .btn {
+      margin-top: auto;
+      justify-self: flex-end;
+      align-self: stretch;
+    }
   }
 }
 
@@ -168,6 +174,9 @@
     &.security,
     &.developer {
       width: 25%;
-    }    
+    }
+    &.digital p {
+      margin-bottom: 35px;
+    }
   }
 }
