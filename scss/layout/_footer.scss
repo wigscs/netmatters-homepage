@@ -133,3 +133,10 @@
     padding: 0 15px;
   }
 }
+
+@media (min-width: 1260px) {
+  .footer-nav .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

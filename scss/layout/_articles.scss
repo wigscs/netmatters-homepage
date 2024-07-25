@@ -156,5 +156,10 @@
       display: none;
     }
   }
+  @media (min-width: 1260px) {
+    .article-list > :last-child {
+      display: initial;
+    }
+  }
 
 }

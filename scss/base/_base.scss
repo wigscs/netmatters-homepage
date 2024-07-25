@@ -72,9 +72,6 @@ p, blockquote {
   margin-bottom: 25px
 }
 
-.flex {
-  display: flex;
-}
 
 .container {
   margin-right: auto;
@@ -88,6 +85,10 @@ p, blockquote {
 
   @media (min-width: 992px) {
     width: 970px;
+  }
+
+  @media (min-width: 1260px) {
+    width: 1200px;
   }
 }
 

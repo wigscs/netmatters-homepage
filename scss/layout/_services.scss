@@ -155,3 +155,19 @@
     }
   }
 }
+@media (min-width: 992px) {
+  .card {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 1260px) {
+  .card {
+    &.telecoms,
+    &.web,
+    &.security,
+    &.developer {
+      width: 25%;
+    }    
+  }
+}

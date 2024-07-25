@@ -7,7 +7,7 @@
   padding-bottom: 50px;
 
   .btn-primary {
-    margin-right: 10px;
+    margin-right: 6px;
   }
   
   p a:hover {
@@ -40,6 +40,23 @@
   @media (max-width: 558px) {
     .btn-primary:first-of-type {
       margin-bottom: 20px;
+    }
+  }
+  @media (min-width: 992px) {
+    .flex {
+      display: flex;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    .col {
+      width: 50%;
+      padding: 0 15px;
+    }
+    .btn-primary:first-of-type {
+      margin-bottom: 15px;
+    }
+    .btn-google {
+      margin-bottom: 15px;
     }
   }
 }

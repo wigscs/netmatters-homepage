@@ -394,10 +394,6 @@ p, blockquote {
   margin-bottom: 25px;
 }
 
-.flex {
-  display: flex;
-}
-
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -412,6 +408,11 @@ p, blockquote {
 @media (min-width: 992px) {
   .container {
     width: 970px;
+  }
+}
+@media (min-width: 1260px) {
+  .container {
+    width: 1200px;
   }
 }
 
@@ -741,6 +742,16 @@ p, blockquote {
     width: 50%;
   }
 }
+@media (min-width: 992px) {
+  .card {
+    width: 33.33%;
+  }
+}
+@media (min-width: 1260px) {
+  .card.telecoms, .card.web, .card.security, .card.developer {
+    width: 25%;
+  }
+}
 .logo-list {
   white-space: nowrap;
   overflow: hidden;
@@ -751,6 +762,7 @@ p, blockquote {
 .logo-list img {
   margin: 0 50px;
   max-height: 100%;
+  max-width: 200px;
   filter: grayscale(1);
 }
 .logo-list img:hover {
@@ -764,7 +776,7 @@ p, blockquote {
   padding-bottom: 50px;
 }
 .home-main .btn-primary {
-  margin-right: 10px;
+  margin-right: 6px;
 }
 .home-main p a:hover {
   text-decoration: underline;
@@ -792,6 +804,23 @@ p, blockquote {
 @media (max-width: 558px) {
   .home-main .btn-primary:first-of-type {
     margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .home-main .flex {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .home-main .col {
+    width: 50%;
+    padding: 0 15px;
+  }
+  .home-main .btn-primary:first-of-type {
+    margin-bottom: 15px;
+  }
+  .home-main .btn-google {
+    margin-bottom: 15px;
   }
 }
 
@@ -934,6 +963,11 @@ p, blockquote {
     display: none;
   }
 }
+@media (min-width: 1260px) {
+  .articles .article-list > :last-child {
+    display: initial;
+  }
+}
 
 .footer-nav {
   color: #fff;
@@ -1051,6 +1085,12 @@ p, blockquote {
   .footer-links > div {
     width: 25%;
     padding: 0 15px;
+  }
+}
+@media (min-width: 1260px) {
+  .footer-nav .container {
+    display: flex;
+    justify-content: space-between;
   }
 }
 .btn {
