@@ -931,20 +931,25 @@ p, blockquote {
   }
 }
 .logo-list {
-  white-space: nowrap;
-  overflow: hidden;
-  height: 70px;
   width: 100%;
-  margin: 50px 0;
+  padding: 50px 0;
+  overflow-x: hidden;
 }
 .logo-list img {
   margin: 0 50px;
-  max-height: 100%;
+  max-height: 70px;
   max-width: 200px;
   filter: grayscale(1);
 }
 .logo-list img:hover {
   filter: initial;
+}
+.logo-list img:first-of-type {
+  margin-left: 20px;
+}
+
+.accreditations {
+  display: flex;
 }
 
 .home-main {
@@ -1145,6 +1150,57 @@ p, blockquote {
   .articles .article-list > :last-child {
     display: initial;
   }
+}
+
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  overflow-x: clip;
+}
+.clients > .logo-container {
+  position: relative;
+  text-align: center;
+  padding: 5px;
+}
+.clients > .logo-container .details {
+  width: 280px;
+  display: none;
+}
+.clients > .logo-container:hover .details {
+  display: block;
+}
+.clients .details {
+  background-color: #333645;
+  color: #fff;
+  text-align: center;
+  max-width: 280px;
+  padding: 20px;
+  font-size: 0.875rem;
+  position: absolute;
+  bottom: 110px;
+}
+.clients .details h3, .clients .details a {
+  color: inherit;
+}
+.clients .details h3 {
+  font-size: 1.125rem;
+  padding-bottom: 17px;
+}
+.clients .arrow {
+  position: absolute;
+  bottom: -38px;
+  left: 50%;
+  margin-left: -36px;
+}
+.clients .arrow::after {
+  content: "";
+  margin: auto;
+  display: inline-block;
+  border-color: #333645 transparent transparent;
+  border-style: solid;
+  border-width: 35px 36px 0;
 }
 
 .footer-nav {
@@ -3283,7 +3339,7 @@ p, blockquote {
   top: 2px;
 }
 
-.hidden, .clients div {
+.hidden {
   display: none;
 }
 
