@@ -581,6 +581,26 @@ p, blockquote {
   padding-top: 10px;
 }
 
+.manage-consent {
+  border: none;
+  background-color: #75788a;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0 10px;
+  text-transform: capitalize;
+  font-weight: 600;
+  z-index: 99;
+  border-top-right-radius: 10px;
+  line-height: 22px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.manage-consent:hover {
+  background-color: #9193a1;
+}
+
 .main-header .inner {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -3585,10 +3605,6 @@ p, blockquote {
 .icon {
   position: relative;
   top: 2px;
-}
-
-.hidden {
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
