@@ -4,7 +4,6 @@
   padding: 50px 0;
   overflow-x: hidden;
   img {
-    margin: 0 50px;
     max-height: 70px;
     max-width: 200px;
     filter: grayscale(1);
@@ -18,4 +17,5 @@
 }
 .accreditations {
   display: flex; 
+  gap: 50px;
 }

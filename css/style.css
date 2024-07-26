@@ -936,7 +936,6 @@ p, blockquote {
   overflow-x: hidden;
 }
 .logo-list img {
-  margin: 0 50px;
   max-height: 70px;
   max-width: 200px;
   filter: grayscale(1);
@@ -950,6 +949,7 @@ p, blockquote {
 
 .accreditations {
   display: flex;
+  gap: 50px;
 }
 
 .home-main {
@@ -1156,7 +1156,7 @@ p, blockquote {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 50px;
   overflow-x: clip;
 }
 .clients > .logo-container {
@@ -1178,6 +1178,7 @@ p, blockquote {
   max-width: 280px;
   padding: 20px;
   font-size: 0.875rem;
+  line-height: 1.375rem;
   position: absolute;
   bottom: 110px;
 }
@@ -1187,6 +1188,10 @@ p, blockquote {
 .clients .details h3 {
   font-size: 1.125rem;
   padding-bottom: 17px;
+  margin-bottom: 0;
+}
+.clients .details p {
+  margin: 0 0 10px;
 }
 .clients .arrow {
   position: absolute;
